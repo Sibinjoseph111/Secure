@@ -27,6 +27,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile files('libs/additionnal.jar')
+
+
+    compile files('libs/mail.jar')
+
+    compile files('libs/activation.jar')
+
 }
 
 

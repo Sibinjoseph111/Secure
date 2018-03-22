@@ -146,6 +146,8 @@ public class LoginActivity extends AppCompatActivity {
 
                             FirebaseUser user = task.getResult().getUser();
                             Toast.makeText(getApplicationContext(), "sign in successfull", Toast.LENGTH_SHORT).show();
+                            Intent mainintent = new Intent(LoginActivity.this,MainActivity.class);
+                            startActivity(mainintent);
 
                             // [START_EXCLUDE]
                             // [END_EXCLUDE]
@@ -185,6 +187,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 signInWithPhoneAuthCredential(credential);
                 Toast.makeText(LoginActivity.this, "Login successfull", Toast.LENGTH_SHORT).show();
+                Intent mainintent = new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(mainintent);
 
             }
 
